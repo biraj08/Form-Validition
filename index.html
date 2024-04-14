@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Fill the form...</h2>
+                <hr>
+            </div>
+
+            <input type="hidden" name="access_key" value="61364865-be4e-4351-9cd4-17f51a5b3db8">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+
+            <h4>which semester are you?</h4>
+
+            <div class="check">                
+                <label for="100">
+                    <input type="radio" value="sem: sem i" name="sem" id="100">sem i
+                </label>
+        
+                <label for="101">
+                    <input type="radio" value="sem: sem ii" name="sem" id="101">sem ii
+                </label>
+        
+                <label for="102">
+                    <input type="radio" value="sem: sem iii" name="sem" id="102">sem iii
+                </label>
+        
+                <label for="103">
+                    <input type="radio" value="sem: sem iiiii" name="sem" id="103">sem iiii
+                </label>
+            </div>
+
+            <button type="submit" id="btn">Submit</button>
+        </form>
+
+        <div class="contact-right">
+            <img src="message.webp" alt="cry">
+        </div>
+        
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

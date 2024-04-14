@@ -1,0 +1,108 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'outfit';
+    background: linear-gradient(270deg, #ffdad5,#ba798a);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    /* background-color: red; */
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: brown;
+    background: #efead3;
+    border-radius: 10px;
+    padding: 5px 60px;
+    font-size: 40px;
+    margin-bottom: 4px;
+}
+
+.contact-left-title hr{  /*hr ko bda kr diya*/
+    width: 100px;
+    margin-left: 138px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(255, 200, 0);
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 25px;
+    font-weight: 500;
+    color: gray;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 35px;
+    border: none;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+
+.contact-right img{
+    width: 400px;
+}
+
+
+
+
+
+
+
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+.check{
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+}
